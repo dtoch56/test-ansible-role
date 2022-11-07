@@ -1,0 +1,12 @@
+services:
+  {% for distro in distros|default([]) %}
+  {{ distro }}:
+    container_name: {{ distro }}
+    image: geerlingguy/docker-{{ distro }}-ansible:latest
+    volumes: [../:/roles]
+    hostname: {{ distro }}
+    working_dir: /roles
+    entrypoint: tail -f
+    command: /dev/null
+
+  {% endfor %}

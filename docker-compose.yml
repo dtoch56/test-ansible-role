@@ -1,0 +1,100 @@
+services:
+  centos7:
+    container_name: centos7
+    image: geerlingguy/docker-centos7-ansible:latest
+    volumes: [../:/roles]
+    hostname: centos7
+    working_dir: /roles
+    entrypoint: tail -f
+    command: /dev/null
+
+  centos8:
+    container_name: centos8
+    image: geerlingguy/docker-centos8-ansible:latest
+    volumes: [../:/roles]
+    hostname: centos8
+    working_dir: /roles
+    entrypoint: tail -f
+    command: /dev/null
+
+  ubuntu2004:
+    container_name: ubuntu2004
+    image: geerlingguy/docker-ubuntu2004-ansible:latest
+    volumes: [../:/roles]
+    hostname: ubuntu2004
+    working_dir: /roles
+    entrypoint: tail -f
+    command: /dev/null
+
+  ubuntu2204:
+    container_name: ubuntu2204
+    image: geerlingguy/docker-ubuntu2204-ansible:latest
+    volumes: [../:/roles]
+    hostname: ubuntu2204
+    working_dir: /roles
+    entrypoint: tail -f
+    command: /dev/null
+
+  debian10:
+    container_name: debian10
+    image: geerlingguy/docker-debian10-ansible:latest
+    volumes: [../:/roles]
+    hostname: debian10
+    working_dir: /roles
+    entrypoint: tail -f
+    command: /dev/null
+
+  debian11:
+    container_name: debian11
+    image: geerlingguy/docker-debian11-ansible:latest
+    volumes: [../:/roles]
+    hostname: debian11
+    working_dir: /roles
+    entrypoint: tail -f
+    command: /dev/null
+
+  fedora35:
+    container_name: fedora35
+    image: geerlingguy/docker-fedora35-ansible:latest
+    volumes: [../:/roles]
+    hostname: fedora35
+    working_dir: /roles
+    entrypoint: tail -f
+    command: /dev/null
+
+  fedora36:
+    container_name: fedora36
+    image: geerlingguy/docker-fedora36-ansible:latest
+    volumes: [../:/roles]
+    hostname: fedora36
+    working_dir: /roles
+    entrypoint: tail -f
+    command: /dev/null
+
+  rockylinux8:
+    container_name: rockylinux8
+    image: geerlingguy/docker-rockylinux8-ansible:latest
+    volumes: [../:/roles]
+    hostname: rockylinux8
+    working_dir: /roles
+    entrypoint: tail -f
+    command: /dev/null
+
+  rockylinux9:
+    container_name: rockylinux9
+    image: geerlingguy/docker-rockylinux9-ansible:latest
+    volumes: [../:/roles]
+    hostname: rockylinux9
+    working_dir: /roles
+    entrypoint: tail -f
+    command: /dev/null
+
+  amazonlinux2:
+    container_name: amazonlinux2
+    image: geerlingguy/docker-amazonlinux2-ansible:latest
+    volumes: [../:/roles]
+    hostname: amazonlinux2
+    working_dir: /roles
+    entrypoint: tail -f
+    command: /dev/null
+

@@ -1,0 +1,30 @@
+vars:
+  distros:
+    # ContOS
+#    - centos6
+    - centos7
+    - centos8
+    # Ubuntu
+#    - ubuntu1604
+#    - ubuntu1804
+    - ubuntu2004
+    - ubuntu2204
+    # Debian
+#    - debian9
+    - debian10
+    - debian11
+    # Fedora
+#    - fedora32
+#    - fedora33
+#    - fedora34
+    - fedora35
+    - fedora36
+    # RockyLinux
+    - rockylinux8
+    - rockylinux9
+    # AmazonLinux
+    - amazonlinux2
+
+templates:
+  - src: docker-compose.yml.j2
+    dest: docker-compose.yml
